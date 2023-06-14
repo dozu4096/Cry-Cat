@@ -6,9 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="shortcut icon" href="./images/favicon.ico">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet"> -->
   <style>
     div {
-      height: 20px;
+      height: 20x;
+    }
+    td {
+      border: 1px solid red;
+      padding: 10px;
+    }
+    .red-style {
+      color:red;
+    }
+    #username {
+      color: red;
+      /* color: yellow; */
     }
   </style>
   <script src="./js/main.js"></script>
@@ -17,17 +29,75 @@
   </script>
   <title>html-learning</title>
 </head>
-<body>
+<a>
   <div>Cry Cat!</div>
+  <!-- <div>reset-css 적용됨</div>
   <h1>cat</h1>
   <a href="about/">ABOUT</a>
+  <a href="1" target="_blank">NAVER</a>
   <img src="./images/crycat.jpg" alt="이미지가 출력이 안될때 출력 문자" />
   <img src="1https://en.meming.world/images/en/thumb/e/e2/Crying_Cat_screaming.jpg/300px-Crying_Cat_screaming.jpg" alt="출력 오류" />
-  <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" placeholder="Google 검색 또는 URL 입력" aria-expanded="false" aria-live="polite">
+  <input id="input" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" placeholder="입력" aria-expanded="false" aria-live="polite">
+  <input type="checkbox">
   <div>Welcome</div>
-  <div>add1!!!</div>
-  <div>add2!!!</div>
-  <div>add3!!!</div>
-  <div>add4!!!</div>
+
+  <div class="abc">.abc + Tab, 가나다</div>
+  라마바
+  <div class="abc">class는 네임태그이다.</div>
+  <h1>hello, head tag는 bold 처리됨</h1>
+  <h2>hello</h2> -->
+
+
+  <div>hello</div>
+  <a href="1">
+    <p>글자 사이에
+      <img src="https://en.meming.world/images/en/thumb/e/e2/Crying_Cat_screaming.jpg/300px-Crying_Cat_screaming.jpg" alt="" style="width: 100px; height: 100px;"/>
+      이미지 넣기
+    </p>
+  </a>
+  <!-- <ol>
+    <li>사과</li>
+    <li>포도</li>
+    <li>딸기</li>
+    <li>오렌지</li>
+  </ol> -->
+  <p>
+    <span>sad</span>
+    <span>cat</span>
+    <div></div>
+  </p>
+
+<p><span>banana<br>cat</span></p>
+<br>
+<br/>
+<input type="text" placeholder="이름을 입력하세요!"/>
+<input type="text" placeholder="이름을 입력하세요!"disabled />
+<input type="text" value="apple"/>
+<input type="password" value="apple"/>
+<br/>
+<label>
+  <input type="checkbox" checked/>Sad
+</label>
+<label>
+  <input type="checkbox" checked disabled/>Banana
+</label>
+<label>
+  <input type="checkbox"/>Cat
+</label>
+<label for=""></label>
+<br>
+<label>
+  <input type="radio" name="fruits" checked>AppleCat
+</label>
+<label>
+  <input type="radio" name="fruits">BananaCat
+</label>
+<br>
+
+<div data-cat-type="AppleCat">cat</div>
+<script>
+  let cat = decument.qerySelectorAll("div")[0].dataset.catType
+  console.log(Cat)
+</script>
 </body>
 </html>
